@@ -158,7 +158,7 @@ footer {
       rgba(88, 107, 77, 0.3) 70%,
       rgba(130, 150, 110, 0.1) 100%
     ),
-    url("pablo.jpg") center/cover no-repeat;
+    url("images/pablo.jpg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
