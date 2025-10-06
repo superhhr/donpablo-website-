@@ -151,14 +151,17 @@ footer {
 }
 #hero {
   height: 90vh;
-  background: linear-gradient(
-      to right,
-      rgba(38, 51, 34, 0.95) 0%,
-      rgba(60, 80, 52, 0.6) 40%,
-      rgba(88, 107, 77, 0.3) 70%,
-      rgba(130, 150, 110, 0.1) 100%
-    ),
-    url("images/pablo.jpg") center/cover no-repeat;
+background: linear-gradient(
+    to right,
+    rgba(38, 51, 34, 0.95) 0%,
+    rgba(60, 80, 52, 0.6) 40%,
+    rgba(88, 107, 77, 0.3) 70%,
+    rgba(130, 150, 110, 0.1) 100%
+  ),
+  url("https://drive.google.com/uc?export=download&id=1Q-KIRusn2D-awGfLajAdV46rmgQ3q7H2")
+    center/cover no-repeat;
+
+      center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
