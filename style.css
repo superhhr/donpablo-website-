@@ -1,0 +1,182 @@
+/* Reset and basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Deep forest base */
+body {
+  background-color: #1b2b1b; /* deep forest green */
+  color: #d2b48c; /* light brown / tan text */
+  font-family: "Arial", sans-serif;
+}
+
+/* Header & Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #0f1a0f; /* darker green-black */
+  border-bottom: 2px solid #3a4a3a;
+}
+
+header h1 {
+  color: #d2b48c;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: #d2b48c;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f0e6d2; /* lighter brown on hover */
+}
+
+/* Hero section (Home page) */
+#hero {
+  height: 90vh;
+  background: url("images/pablo.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f5deb3; /* warm wheat text */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+#hero h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 20px;
+  max-width: 600px;
+}
+
+/* Gallery (used in multiple pages) */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 40px;
+  background-color: #263826; /* muted olive background */
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #4a5a4a;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  border-color: #d2b48c;
+}
+
+/* Cafe page section */
+.gallery-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #1f2f1f;
+}
+
+.gallery-section h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #f0e6d2;
+}
+
+.gallery-section p {
+  font-size: 18px;
+  color: #d2b48c;
+  margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+  background-color: #0f1a0f;
+  color: #d2b48c;
+  text-align: center;
+  padding: 15px;
+  border-top: 2px solid #3a4a3a;
+  font-size: 14px;
+}
+
+.drone-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* space between videos */
+  flex-wrap: wrap; /* lets videos move to next line if screen is small */
+  padding: 20px;
+}
+
+.drone-gallery video {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.logo {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo .bold {
+  font-weight: 700; /* Roboto Bold */
+  font-size: 28px;
+  color: #d2b48c; /* light brown */
+  letter-spacing: 1px;
+}
+
+.logo .medium {
+  font-weight: 500; /* Roboto Medium */
+  font-size: 16px;
+  color: #bfa16f; /* slightly lighter brown */
+  letter-spacing: 0.5px;
+}
+#hero {
+  height: 90vh;
+  background: linear-gradient(
+      to right,
+      rgba(38, 51, 34, 0.95) 0%,
+      rgba(60, 80, 52, 0.6) 40%,
+      rgba(88, 107, 77, 0.3) 70%,
+      rgba(130, 150, 110, 0.1) 100%
+    ),
+    url("images/pablo.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 60px;
+  color: #d1b48c; /* soft light brown for text */
+  font-family: "Roboto", sans-serif;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Optional — make text stand out more on top of the image */
+#hero h1 {
+  font-weight: 700; /* bold */
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-weight: 500; /* medium */
+  font-size: 1.3rem;
+}
